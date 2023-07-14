@@ -20,7 +20,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color2);   
+    background-color: var(--color1);   
 }
 
 .nav a {
@@ -40,10 +40,12 @@
     
 }
 #titulo{
-    color: var(--color5);
+    color: white;
     font-size: 70px;
     margin-top: 10rem;
     margin-left: 25%;
+    text-shadow: 6px 6px 9px black
+    ;
 }
 
 h3{
@@ -99,4 +101,52 @@ margin-top: 2 rem;
 
 .card p {
     margin-bottom: 16px;
+}
+
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color3);
+}
+
+.form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form h2 {
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
