@@ -1,20 +1,22 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
-    
+
 }
+
 :root {
     --color1: #fc7300;
     --color2: #1f8a70;
-    --color3: #00425a;  
+    --color3: #00425a;
     --color4: #181823;
     --color5: #eff5f5;
     font-family: 'Pacifico', cursive;
-    
+
 }
+
 .nav {
-    
+
     height: 7rem;
     width: 100%;
     display: flex;
@@ -28,8 +30,15 @@
     padding: 30px;
     text-decoration: none;
     color: black;
-    font-size:2rem;
-    text-shadow: 0px 2px black
+    font-size: 2rem;
+    transition: 0, 4s;
+    text-shadow: 0px 2px black;
+
+}
+
+.nav a:hover {
+    color: var(--color3);
+    transform: scale(1.2);
 }
 
 .logo_ppal {
@@ -47,6 +56,7 @@
     margin-top: 15rem;
     margin-left: 30%;
     text-shadow: 6px 6px 9px black;
+
 }
 
 h3 {
@@ -58,9 +68,11 @@ h3 {
 
 
 }
-p{
+
+p {
     font-size: 1.5rem;
 }
+
 .sec1 {
     background-color: var(--color2);
 
@@ -74,7 +86,7 @@ p{
     margin-right: 20px;
     background-color: var(--color2);
 
-    
+
 }
 
 hr {
@@ -84,9 +96,11 @@ hr {
 .sec2 {
     background-color: var(--color2)
 }
+
 .sec3 {
     background-color: var(--color2)
 }
+
 .sec4 {
     background-color: var(--color2)
 }
@@ -101,12 +115,12 @@ hr {
 
 .propu {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 100%;
     gap: 5px;
     margin-top: 2rem;
     margin-top: 2 rem;
-   
+
 
 }
 
@@ -132,9 +146,16 @@ hr {
 .fot {
     display: flex;
     justify-content: space-around;
-    background-color: var(--color1
+    background-color: var(--color1);
 
-);
+}
+
+.fot h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0, 5rem;
+    color: var(--color5);
+    text-shadow: 6px 6px 9px black;
 }
 
 .redes {
@@ -142,19 +163,23 @@ hr {
     flex-direction: column;
     text-align: center;
     gap: 0, 9rem;
+    width: 33%;
 }
 
 .ubicacion {
     display: flex;
     text-align: center;
     flex-direction: column;
+    width: 33%;
 }
 
 .cont {
     display: flex;
     flex-direction: column;
+    width: 33%;
     text-align: center;
-    gap: 3rem;
+    justify-content: center;
+
 }
 
 
@@ -173,11 +198,12 @@ hr {
     color: var(--color3);
     font-size: 3rem;
 }
+
 form {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: 60%;
-    flex-basis: 100%;  
+    flex-basis: 100%;
     margin-left: 20%;
 }
 
@@ -199,4 +225,80 @@ input[type="submit"] {
     color: #fff;
     border: var(--color4) 2px solid;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    /* Estilos para la tableta */
+    #titulo {
+        color: var(--color1);
+        font-size: 60px;
+        margin-top: 10rem;
+        margin-left: 15%;
+        text-shadow: 6px 6px 9px black;
+    }
+
+    .nav {
+
+        height: 7rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color1);
+        border-color: var(--color4) 5px solid;
+
+
+    }
+
+    .nav a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        text-shadow: 0px 2px black
+    }
+
+    #quienes1 {
+        position: relative;
+    }
+
+    #quienes1 img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 98%;
+        height: 350px;
+    }
+
+    #quienes1 p {
+        margin-top: 360px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .porque {
+        position: relative;
+    }
+
+    .porque img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 98%;
+        height: 350px;
+    }
+
+    .porque p {
+        margin-top: 360px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #maps {
+        height: 200px;
+        width: 200px;
+    }
 }
