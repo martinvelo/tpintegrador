@@ -296,7 +296,10 @@ input[type="submit"] {
         margin-left: 10px;
         margin-right: 10px;
     }
-
+    .propu a {
+        height: 10rem;
+        width: 50rem;
+    }
 
     #maps {
         height: 220px;
