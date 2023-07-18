@@ -53,7 +53,7 @@
 #titulo {
     color: white;
     font-size: 70px;
-    margin-top: 15rem;
+    margin-top: 13rem;
     margin-left: 30%;
     text-shadow: 6px 6px 9px black;
 
@@ -228,9 +228,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+
+
 @media (max-width: 768px) {
 
-    /* Estilos para la tableta */
+    /* Estilos para la tablet */
     #titulo {
         color: var(--color1);
         font-size: 60px;
@@ -295,104 +297,133 @@ input[type="submit"] {
         margin-right: 10px;
     }
 
-    
-}
-
-@media (max-width: 320px) {
-    /* Estilos para celular */
-    #titulo {
-        color: var(--color1);
-        font-size: 30px;
-        margin-top: 8rem;
-        margin-left: 8%;
-        text-shadow: 6px 6px 9px black;
-    }
-    .logo_ppal {
-        display: flex;
-        height: 300px;
-        background-image: url(../multimedia/img/utrefschool.jpg);
-        width: 100%;
-        background-size: cover;
-    
-    }
-    p {
-        font-size: 1rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    .nav {
-        height: 3rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--color1);
-        border-color: var(--color4) 5px solid;
-    }
-    .propu{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav a {
-        text-decoration: none;
-        color: black;
-        justify-content: space-between;
-        font-size: 0.75rem;
-        text-shadow: 0px 2px black;
-        padding: 0;
-        margin-left: 20px;
-    }
-
-    #quienes1 {
-        position: relative;
-    }
-
-    #quienes1 img {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 98%;
-        height: 350px;
-    }
-
-    #quienes1 p {
-        margin-top: 360px;
-        padding: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .porque {
-        position: relative;
-    }
-
-    .porque img {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 98%;
-        height: 350px;
-    }
-
-    .porque p {
-        margin-top: 360px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 
     #maps {
-        height: 200px;
-        width: 200px;
+        height: 220px;
+        width: 220px;
     }
-    .ubicacion{
+
+}
+
+@media (min-width: 320px) {
+    #iconmaps {
         display: none;
     }
-    #link{ font-size: 1.5rem;
-    }
-    .card-c {
-    margin-left: 15px;
-    }
 
+    @media (max-width: 320px) {
+        #iconmaps {
+            display: flex;
+        }
 
+        @media (max-width: 320px) {
+
+            /* Estilos para celular */
+            #titulo {
+                color: var(--color1);
+                font-size: 30px;
+                margin-top: 6rem;
+                margin-left: 8%;
+                text-shadow: 6px 6px 9px black;
+            }
+
+            .logo_ppal {
+                display: flex;
+                height: 300px;
+                background-image: url(../multimedia/img/utrefschool.jpg);
+                width: 100%;
+                background-size: cover;
+
+            }
+
+            p {
+                font-size: 1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .nav {
+                height: 3rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                background-color: var(--color1);
+                border-color: var(--color4) 5px solid;
+            }
+
+            .propu {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav a {
+                text-decoration: none;
+                color: black;
+                justify-content: space-between;
+                font-size: 0.75rem;
+                text-shadow: 0px 2px black;
+                padding: 0;
+                margin-left: 20px;
+            }
+
+            #quienes1 {
+                position: relative;
+            }
+
+            #quienes1 img {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 98%;
+                height: 350px;
+            }
+
+            #quienes1 p {
+                margin-top: 360px;
+                padding: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .porque {
+                position: relative;
+            }
+
+            .porque img {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 98%;
+                height: 350px;
+            }
+
+            .porque p {
+                margin-top: 360px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            #maps {
+                height: 200px;
+                width: 200px;
+            }
+
+            .ubicacion {
+                display: none;
+            }
+
+            #link {
+                font-size: 1.5rem;
+            }
+
+            .card-c {
+                margin-left: 15px;
+            }
+
+            #iconmaps {
+                height: 150px;
+                width: 150px;
+                padding: 0px;
+            }
+        }
+    }
 }
