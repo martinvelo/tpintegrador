@@ -355,7 +355,9 @@ input[type="submit"] {
             .propu {
                 display: flex;
                 flex-direction: column;
-                text-align: center;
+                margin-left: 80px;
+                gap: 25px;
+                
             }
 
             .nav a {
